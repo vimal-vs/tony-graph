@@ -24,8 +24,9 @@ function App() {
   }, []);
 
   return (
-    <div className="h-screen w-full flex flex-col gap-12 justify-center items-center">
-      <div className="flex flex-wrap gap-x-6 gap-y-5 justify-center items-center w-full">
+    <div className="flex min-h-screen flex-col gap-12 justify-center items-center py-12">
+      <h1 className="w-full bg-neutral-950 text-white text-6xl absolute top-0 text-center py-2">Power Monitor</h1>
+      <div className="flex flex-wrap gap-x-6 gap-y-5 justify-center items-center min-w-full pt-20 md:pt-0">
         <div className="border p-2 rounded-lg shadow-lg w-80 flex justify-center items-center flex-col gap-6">
           <p className="text-lg font-semibold w-fit">Panel 1</p>
           <hr className="w-full" />
@@ -50,7 +51,7 @@ function App() {
           <div className="flex flex-col justify-center items-center w-full font-semibold text-lg pb-4">
             <p>Power 3: {values.Power3} Watts</p>
             <p>Current 3: {values.Current3} A</p>
-            <p>Voltage 3: {values.Voltage3} V</p>
+            <p>Voltage 3: {values.Voltage3} V   </p>
           </div>
         </div>
       </div>
